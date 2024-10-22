@@ -17,6 +17,9 @@ let jogador = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
+// Para posicionar o personagem no início:
+// 
+// Colocar um ladrilho (tile) usado como marcador do local onde o personagem vai aparecer. 
 tiles.placeOnRandomTile(jogador, sprites.dungeon.darkGroundNorthEast1)
 scene.cameraFollowSprite(jogador)
 jogador.setStayInScreen(true)
